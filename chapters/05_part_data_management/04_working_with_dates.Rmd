@@ -42,7 +42,7 @@ birth_dates
 
 * We used the `read_csv()` function to import a csv file containing simulated data into R. 
 
-* The simulated data contains the first name, last name, and date of birth for 10 fictious people. 
+* The simulated data contains the first name, last name, and date of birth for 10 fictitious people. 
 
 * In this data, date of birth is recorded in the four most common formats that I typically come across.
 
