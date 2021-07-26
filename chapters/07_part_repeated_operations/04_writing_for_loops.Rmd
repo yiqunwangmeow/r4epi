@@ -116,7 +116,7 @@ mean(df_xyz[[3]])
 
 For reasons that will become clearer later, this will actually be the syntax we want to use inside of our for loop. 
 
-Notice, however, the we copied the same code more than twice above. For all of the reasons we've already discussed, we would like to just type `mean(df_xyz[[ # ]]` once and have R fill in the number inside the double brackets for us, one after the other. As you've probably guessed, that's exactly what the for loop does.
+Notice, however, that we copied the same code more than twice above. For all of the reasons we've already discussed, we would like to just type `mean(df_xyz[[ # ]]` once and have R fill in the number inside the double brackets for us, one after the other. As you've probably guessed, that's exactly what the for loop does.
 
 ### The for() function
 
@@ -462,7 +462,7 @@ Just to make sure that we really understand what's going on in the code above, l
 knitr::include_graphics("img/07_part_repeated_operations/04_for_loops/iteration_2_1.png")
 ```
 
-R starts executing at the top of the for loop. In the first iteration, the value of i is set to the first value in `seq_along(df_xyz)`, which is `1`. Then, the `i` in `df_xyz[[i]]` inside the for loop body is replaced with `1`. Then, R calculates the mean of `df_xyz[[1]]`, which is `x` column of the `df_xyz` data frame. Finally, the mean value is assigned to `xyz_means[[i]]`, which is `xyz_means[[1]]` in this iteration. So, the value of the first element in the `xyz_means` vector is `0.07462564`.
+R starts executing at the top of the for loop. In the first iteration, the value of `i` is set to the first value in `seq_along(df_xyz)`, which is `1`. Then, the `i` in `df_xyz[[i]]` inside the for loop body is replaced with `1`. Then, R calculates the mean of `df_xyz[[1]]`, which is `x` column of the `df_xyz` data frame. Finally, the mean value is assigned to `xyz_means[[i]]`, which is `xyz_means[[1]]` in this iteration. So, the value of the first element in the `xyz_means` vector is `0.07462564`.
 
 At this point, there is no more code left to execute inside of the for loop, so R returns to the top of the loop. `i` has not yet taken every value of the object to the right of the keyword `in`, so R starts another iteration of the for loop. 
 
