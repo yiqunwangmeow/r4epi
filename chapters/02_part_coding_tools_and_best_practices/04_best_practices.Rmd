@@ -159,7 +159,7 @@ my_cancer_data
 
 #### Prefix the names of similar variables 
 
-When you have multiple related variables, it's good practice to start their variable names with the same word. It makes these related variables easier to find and work with in the future if we need to do something with all of them at once. We can sort our variable names alphabetically to easily find find them. Additionally, we can use variable selectors like `starts_with("name")` to perform some operation on all of them at once. 
+When you have multiple related variables, it's good practice to start their variable names with the same word. It makes these related variables easier to find and work with in the future if we need to do something with all of them at once. We can sort our variable names alphabetically to easily find them. Additionally, we can use variable selectors like `starts_with("name")` to perform some operation on all of them at once. 
 
 ```{r eval=FALSE}
 # Don't use
@@ -185,7 +185,7 @@ address_state
 
 ### File Names
 
-All the variable naming suggestons above also apply to file names. However, I make a few additional suggestions specific to file names below.
+All the variable naming suggestions above also apply to file names. However, I make a few additional suggestions specific to file names below.
 
 #### Managing multiple files in projects
 
